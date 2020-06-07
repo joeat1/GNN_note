@@ -23,4 +23,5 @@
 
 ### 研究团队
 
-+ Zhiyuan Liu, Jie Zhou. 周杰 刘志远 清华大学计算机科学与技术学院
++ Maosong Sun(孙茂松 教授), Zhiyuan Liu(刘知远 助理研究员), Jie Zhou, 清华大学计算机科学与技术学院 智能技术与系统国家重点实验室
+
