@@ -4,7 +4,7 @@
 
 ## 论文获取
 + 可以查询最新论文数据：[网址](http://arxitics.com/search?q=GNN&sort=updated)
-+ 由Jie Zhou等整理的详细的论文列表： https://github.com/thunlp/GNNPapers
++ 由Jie Zhou等整理的详细的论文列表： https://github.com/thunlp/GNNPapers 清华大学自然语言处理实验室
 
 ## 列表目录
 
