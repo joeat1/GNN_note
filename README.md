@@ -4,4 +4,4 @@
 ## 列表目录
 
 ### 综述
-+ A Comprehensive Survey on Graph Neural Networks. arxiv 2019. (论文地址)[https://arxiv.org/pdf/1901.00596.pdf]
++ A Comprehensive Survey on Graph Neural Networks. arxiv 2019. [论文地址](https://arxiv.org/pdf/1901.00596.pdf)
