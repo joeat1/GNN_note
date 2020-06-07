@@ -1,6 +1,6 @@
 # GNN
 神经网络的迅速发展，也推动着将神经网络运用到图这一特殊的数据结构的相关研究，熟悉和运用图神经网络的方法，很有必要。
-此处将收集和整理相关论文，并上传部分个人笔记。
+此处将收集和整理相关论文和笔记。
 
 ## 论文获取
 + 可以查询最新论文数据：[网址](http://arxitics.com/search?q=GNN&sort=updated)
@@ -10,9 +10,22 @@
 
 ### 综述
 + A Comprehensive Survey on Graph Neural Networks. arxiv 2019. [论文地址](https://arxiv.org/pdf/1901.00596.pdf)
+  + 知乎笔记：https://zhuanlan.zhihu.com/p/54241746
 + Graph Neural Networks: A Review of Methods and Applications. arxiv 2018. [论文地址](https://arxiv.org/pdf/1812.08434.pdf)
+  + 微信笔记：https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650754558&idx=2&sn=7d79191b9ed30679d5d40e22d9cabdf8&chksm=871a8980b06d00962e0dbe984e1d3469214db31cb402b4725a0dfe330249a830b45cb26932b5&scene=21
++ Deep Learning on Graphs: A Survey. arxiv 2018. [论文地址](https://arxiv.org/pdf/1812.04202.pdf)
 
 ### 模型
+
++ 空域GCN  Learning Convolutional Neural Networks for Graphs  [论文地址](https://proceedings.mlr.press/v48/niepert16.pdf)
+  + 知乎笔记：https://zhuanlan.zhihu.com/p/27587371
++ 谱域GCN  Semi-Supervised Classification with Graph Convolutional Networks [论文地址](https://arxiv.org/pdf/1609.02907.pdf)
+  + 知乎笔记：https://zhuanlan.zhihu.com/p/31067515
++ 
+
+### 应用
++ Spam Review Detection with Graph Convolutional Networks  [论文地址](https://arxiv.org/pdf/1908.10679.pdf)
++ Abusive Language Detection with Graph Convolutional Networks [论文地址](https://arxiv.org/pdf/1904.04073.pdf)
 
 
 ## 代码
@@ -33,6 +46,8 @@
 
 ## 其他资源
 + 图神经网络在视频理解中的探索 https://www.bilibili.com/video/av48201125/ 
++ 图神经网络介绍-Introduction to Graph Neural Network https://www.bilibili.com/video/av62661713
++ 唐杰-图神经网络及认知推理-图神经网络学习班  https://www.bilibili.com/video/av77934956
 
 # 说明
 + 本仓库仅作为学术研究使用，笔记不一定完全表述了原作者的想法，如果出现问题欢迎探讨，也建议与原作者联系。
