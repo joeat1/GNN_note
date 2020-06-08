@@ -29,7 +29,11 @@
 
 
 ## 代码
-
++ PyG框架 Geometric Deep Learning Extension Library for PyTorch   https://github.com/rusty1s/pytorch_geometric
+  + 文档：https://pytorch-geometric.readthedocs.io/
+  + PyG包含有大量的基准数据集
+  
++ https://github.com/shiruipan/graph_datasets
 
 ## 数据集
 
