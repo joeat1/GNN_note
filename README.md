@@ -33,10 +33,9 @@
   + 文档：https://pytorch-geometric.readthedocs.io/
   + PyG包含有大量的基准数据集
   
-+ https://github.com/shiruipan/graph_datasets
 
 ## 数据集
-
++ https://github.com/shiruipan/graph_datasets  涉及化合物，引文网络，情感网络，脑功能等五个数据库
 
 ## 研究团队
 > 此处列举的只是一部分，重要的学者远比我看到的多得多。
