@@ -17,9 +17,10 @@
 
 ### 模型
 
-+ 空域GCN  Learning Convolutional Neural Networks for Graphs  [论文地址](https://proceedings.mlr.press/v48/niepert16.pdf)
++ Spectral Networks and Locally Connected Networks on Graphs. ICLR 2014.  [论文地址](https://arxiv.org/pdf/1312.6203.pdf)
++ 空域GCN  Learning Convolutional Neural Networks for Graphs  ICML 2016.  [论文地址](https://proceedings.mlr.press/v48/niepert16.pdf)
   + 知乎笔记：https://zhuanlan.zhihu.com/p/27587371
-+ 谱域GCN  Semi-Supervised Classification with Graph Convolutional Networks [论文地址](https://arxiv.org/pdf/1609.02907.pdf)
++ 谱域GCN  Semi-Supervised Classification with Graph Convolutional Networks  ICLR 2017. [论文地址](https://arxiv.org/pdf/1609.02907.pdf)
   + 知乎笔记：https://zhuanlan.zhihu.com/p/31067515
 + 
 
