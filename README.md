@@ -1,10 +1,11 @@
 # GNN
 神经网络的迅速发展，也推动着将神经网络运用到图这一特殊的数据结构的相关研究，熟悉和运用图神经网络的方法，很有必要。
-此处将收集和整理相关论文和笔记。
+此处将收集和整理相关论文和笔记，便于入门，便于快速把握论文基本信息。
 
 ## 论文获取
 + 可以查询最新论文数据：[网址](http://arxitics.com/search?q=GNN&sort=updated)
 + 由Jie Zhou等整理的详细的论文列表： https://github.com/thunlp/GNNPapers 清华大学自然语言处理实验室
++ 知乎精华：https://www.zhihu.com/topic/20747184/top-answers
 
 ## 列表目录
 
@@ -12,7 +13,7 @@
 + A Comprehensive Survey on Graph Neural Networks. arxiv 2019. [论文地址](https://arxiv.org/pdf/1901.00596.pdf)
   + 知乎笔记：https://zhuanlan.zhihu.com/p/54241746
 + Graph Neural Networks: A Review of Methods and Applications. arxiv 2018. [论文地址](https://arxiv.org/pdf/1812.08434.pdf)
-  + 微信笔记：https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650754558&idx=2&sn=7d79191b9ed30679d5d40e22d9cabdf8&chksm=871a8980b06d00962e0dbe984e1d3469214db31cb402b4725a0dfe330249a830b45cb26932b5&scene=21
+  + CSDN笔记：https://blog.csdn.net/ssq183/article/details/101118929
 + Deep Learning on Graphs: A Survey. arxiv 2018. [论文地址](https://arxiv.org/pdf/1812.04202.pdf)
 
 ### 模型
