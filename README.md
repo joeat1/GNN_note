@@ -1,8 +1,12 @@
 # GNN
 
-神经网络的迅速发展，也推动着将神经网络运用到图这一特殊的数据结构的相关研究，图是一种结构化，非欧式空间的数据，它由一系列的对象（nodes）和关系类型（edges）组成，并能表示更为复杂的信息，熟悉和运用图神经网络的方法很有必要。
+神经网络的迅速发展，也推动着将神经网络运用到图这一特殊的数据结构的相关研究。
+
+图是一种结构化，非欧式的数据，它由一系列的对象（nodes）和关系类型（edges）组成，具有局部连接的特点，能表示更为复杂的信息；熟悉和运用图神经网络的方法很有必要。
 
 基于此，将收集和整理相关论文和笔记，便于入门和个人回顾，便于快速发现论文基本信息和主要资源。
+
+
 
 ## 论文获取
 
@@ -13,12 +17,15 @@
 ## 列表目录
 
 ### 综述
+
 > 需要注意的是，几篇综述的参数表示和图GNN的分类角度存在不同，不要搞混
 
 + A Comprehensive Survey on Graph Neural Networks. arxiv 2019. [论文地址](https://arxiv.org/pdf/1901.00596.pdf)
   + 知乎笔记：https://zhuanlan.zhihu.com/p/54241746
 + Graph Neural Networks: A Review of Methods and Applications. arxiv 2018. [论文地址](https://arxiv.org/pdf/1812.08434.pdf)
   + CSDN笔记：https://blog.csdn.net/ssq183/article/details/101118929
+  + 作者将GNN划分为五大类别，分别是：图卷积网络（Graph Convolution Networks，GCN）、 图注意力网络（Graph Attention Networks）、图自编码器（ Graph Autoencoders）、图生成网络（ Graph Generative Networks） 和图时空网络（Graph Spatial-temporal Networks）
+  + 每个节点都是由该节点的特征和相关节点来共同表示的。
 + Deep Learning on Graphs: A Survey. arxiv 2018. [论文地址](https://arxiv.org/pdf/1812.04202.pdf)
 + 图卷积神经网络综述 2020 [论文下载](https://kns.cnki.net/kcms/detail/11.1826.tp.20191104.1632.006.html)
 
@@ -27,29 +34,37 @@
 
 > [知乎：  图神经网络从入门到入门](https://zhuanlan.zhihu.com/p/136521625) 
 
-#### GCN
+#### 图卷积网络（Graph Convolution Networks，GCN）
 
-> 基础知识 [参考](https://zhuanlan.zhihu.com/p/124727955) 
+> 基于频谱的方法建立在**全局的**归一化的图拉普拉斯矩阵（**无向图**的数学表示）之上，故而假定了图为无向图，难以处理大规模图，有向图以及动态图；而基于空间的方法较为灵活，可以引入采样技术来提高效率，从而近年来基于空间的模型越来越受到关注。
+
+**基于频谱**
+
+> 基础知识可以 [参考](https://zhuanlan.zhihu.com/p/124727955) 
 >
 > + 特征值、特征向量与特征分解（谱分解）
 > + 拉普拉斯矩阵
 > + 傅里叶变化与卷积操作（特征抽取技术）
 
 + 谱域GCN  Spectral Networks and Locally Connected Networks on Graphs. ICLR 2014.  [论文地址](https://arxiv.org/pdf/1312.6203.pdf)
-
-+ 空域GCN  Learning Convolutional Neural Networks for Graphs  ICML 2016.  [论文地址](https://proceedings.mlr.press/v48/niepert16.pdf)
-  + 知乎笔记：https://zhuanlan.zhihu.com/p/27587371
-
 + 谱域GCN  Semi-Supervised Classification with Graph Convolutional Networks  ICLR 2017. [论文地址](https://arxiv.org/pdf/1609.02907.pdf)
   + 知乎笔记：https://zhuanlan.zhihu.com/p/31067515
 
+**基于空域**
+
++ 空域GCN  Learning Convolutional Neural Networks for Graphs  ICML 2016.  [论文地址](https://proceedings.mlr.press/v48/niepert16.pdf)
+  + 知乎笔记：https://zhuanlan.zhihu.com/p/27587371
 + GraphSAGE：**Inductive Representation Learning on Large Graphs.** NIPS 2017. [论文地址](https://arxiv.org/pdf/1706.02216.pdf) 
   + **Graph Sample and Aggregate(GraphSAGE)** 能够处理 large graphs，克服了GCN训练时内存和显存的限制，即使在图中加入新节点，也能计算出节点表示。
   + 训练时仅保留训练样本到训练样本的边（Inductive Learning），对邻居采用有放回的重采样/负采样方法进行定长抽样（Sample），之后汇聚（Aggregate）这些邻居的特征以更新自己信息。
   + 同时适用于有监督与无监督表示学习
   + 缺点：采样没有考虑到不同邻居节点的重要性不同，聚合时没有区分中心节点与邻居节点
 
-#### GAT
+
+
+#### 图注意力网络（Graph Attention Networks）GAT
+
+> 注意力机制能够放大数据中最重要的部分产生的影响。可以利用注意力函数，自适应地控制相邻节点j对节点i的贡献，或者集成多个模型，或者用于引导节点采样。
 
 + **Graph Attention Networks.** ICLR 2018.  [论文地址](https://arxiv.org/pdf/1710.10903.pdf) 
   + 借鉴Transformer中self-attention机制，根据邻居节点的特征来分配不同的权值
@@ -58,7 +73,9 @@
 
 
 
-#### Graph Auto-Encoder(GAE)
+#### 图自编码器（Graph Auto-Encoder）(GAE)
+
+> 其目的是利用神经网络结构将图的顶点表示为低维向量。
 
 + Variational Graph Auto-Encoders（NIPS2016）  [论文地址](https://arxiv.org/pdf/1611.07308.pdf)
   + 知乎笔记：https://zhuanlan.zhihu.com/p/78340397
@@ -75,10 +92,22 @@
 
 ### 应用
 
+> 图神经网络广泛用于计算机视觉、推荐系统、交通拥堵情况、生物化学结构、社交网络信息等
+
 + Spam Review Detection with Graph Convolutional Networks  [论文地址](https://arxiv.org/pdf/1908.10679.pdf)
 + Abusive Language Detection with Graph Convolutional Networks [论文地址](https://arxiv.org/pdf/1904.04073.pdf)
 + **推荐系统**   Graph Convolutional Neural Networks for Web-Scale Recommender Systems   [论文地址](https://arxiv.org/pdf/1806.01973.pdf)
-+ 
+
+
+
+## 挑战与疑惑
+
++ 浅层结构：目前GNN还只能在较浅层的网络上发挥优势，随着层数的加深，网络会出现退化。
++ 动态图：目前大多方法只能应用在静态图上，对于动态图还没有特别好的解决方案。
++ 非结构化场景：还没有一个通用的方法来合理的处理非结构化数据。
++ 扩展性：将图网络应用于大规模数据上仍然面临着不小的困难。
+
+
 
 ## 代码
 
@@ -129,8 +158,12 @@
 + 唐杰-图神经网络及认知推理-图神经网络学习班  https://www.bilibili.com/video/av77934956
 + 图神经网络在线研讨会2020  https://www.bilibili.com/video/BV1zp4y117bB
 
+
+
 # 说明
 
 + 本仓库仅作为学术研究使用，笔记不一定完全表述了原作者的想法，如果出现问题欢迎探讨，也建议与原作者联系。
 + 如果部分内容作者或出版社有异议，内容存在错误，请联系我进行删除或修改。
+
+
 
