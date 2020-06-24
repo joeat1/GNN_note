@@ -1,17 +1,19 @@
 # GNN
 
-神经网络的迅速发展，也推动着将神经网络运用到图这一特殊的数据结构的相关研究，熟悉和运用图神经网络的方法，很有必要。
-此处将收集和整理相关论文和笔记，便于入门，便于快速把握论文基本信息。
+神经网络的迅速发展，也推动着将神经网络运用到图这一特殊的数据结构的相关研究，图是一种结构化，非欧式空间的数据，它由一系列的对象（nodes）和关系类型（edges）组成，并能表示更为复杂的信息，熟悉和运用图神经网络的方法很有必要。
+
+基于此，将收集和整理相关论文和笔记，便于入门和个人回顾，便于快速发现论文基本信息和主要资源。
 
 ## 论文获取
 
 + 可以查询最新论文数据：[网址](http://arxitics.com/search?q=GNN&sort=updated)
 + 由Jie Zhou等整理的详细的论文列表： https://github.com/thunlp/GNNPapers 清华大学自然语言处理实验室
-+ 知乎精华：https://www.zhihu.com/topic/20747184/top-answers
++ 知乎相关话题精华：https://www.zhihu.com/topic/20747184/top-answers
 
 ## 列表目录
 
 ### 综述
+> 需要注意的是，几篇综述的参数表示和图GNN的分类角度存在不同，不要搞混
 
 + A Comprehensive Survey on Graph Neural Networks. arxiv 2019. [论文地址](https://arxiv.org/pdf/1901.00596.pdf)
   + 知乎笔记：https://zhuanlan.zhihu.com/p/54241746
@@ -19,7 +21,7 @@
   + CSDN笔记：https://blog.csdn.net/ssq183/article/details/101118929
 + Deep Learning on Graphs: A Survey. arxiv 2018. [论文地址](https://arxiv.org/pdf/1812.04202.pdf)
 + 图卷积神经网络综述 2020 [论文下载](https://kns.cnki.net/kcms/detail/11.1826.tp.20191104.1632.006.html)
-  + 
+
 
 ### 模型
 
@@ -36,21 +38,15 @@
 + 谱域GCN  Spectral Networks and Locally Connected Networks on Graphs. ICLR 2014.  [论文地址](https://arxiv.org/pdf/1312.6203.pdf)
 
 + 空域GCN  Learning Convolutional Neural Networks for Graphs  ICML 2016.  [论文地址](https://proceedings.mlr.press/v48/niepert16.pdf)
-
   + 知乎笔记：https://zhuanlan.zhihu.com/p/27587371
 
 + 谱域GCN  Semi-Supervised Classification with Graph Convolutional Networks  ICLR 2017. [论文地址](https://arxiv.org/pdf/1609.02907.pdf)
-
   + 知乎笔记：https://zhuanlan.zhihu.com/p/31067515
 
-+ **Inductive Representation Learning on Large Graphs.** NIPS 2017. [论文地址](https://arxiv.org/pdf/1706.02216.pdf) 
-
++ GraphSAGE：**Inductive Representation Learning on Large Graphs.** NIPS 2017. [论文地址](https://arxiv.org/pdf/1706.02216.pdf) 
   + **Graph Sample and Aggregate(GraphSAGE)** 能够处理 large graphs，克服了GCN训练时内存和显存的限制，即使在图中加入新节点，也能计算出节点表示。
-
   + 训练时仅保留训练样本到训练样本的边（Inductive Learning），对邻居采用有放回的重采样/负采样方法进行定长抽样（Sample），之后汇聚（Aggregate）这些邻居的特征以更新自己信息。
-
   + 同时适用于有监督与无监督表示学习
-
   + 缺点：采样没有考虑到不同邻居节点的重要性不同，聚合时没有区分中心节点与邻居节点
 
 #### GAT
@@ -70,13 +66,11 @@
   + 损失函数衡量生成图和真实图之间的差异，并加入各独立正态分布和标准正态分布的散度以限定各个正态分布的形式。
 
 
-
 #### Graph Pooling
 
 + 简单的max pooling和mean pooling （不高效而且忽视了节点的顺序信息）
 + **Differentiable Pooling** (**DiffPool**)   Hierarchical Graph Representation Learning with Differentiable Pooling. NeurIPS 2018.  [论文下载](https://arxiv.org/pdf/1806.08804.pdf)
   + 通过一个**可微池化操作模块**去分层的聚合图节点
-
 
 
 ### 应用
@@ -105,7 +99,6 @@
 + http://www.cs.umd.edu/~sen/lbc-proj/LBC.html 
   + 引文网络 CiteSeer、Cora、WebKB
   + 社交网络 Terrorists 
-  + 参考 https://www.jianshu.com/p/67137451b67f
   + https://blog.csdn.net/yyl424525/article/details/100831452 
 + graph kernel datasets https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
 + Stanford Large Network Dataset Collection  https://snap.stanford.edu/data/index.html
@@ -127,6 +120,7 @@
 
 + Maosong Sun(孙茂松 教授), Zhiyuan Liu(刘知远 助理研究员), Jie Zhou, 清华大学计算机科学与技术学院
 + 沈华伟
++ 
 
 ## 其他资源
 
