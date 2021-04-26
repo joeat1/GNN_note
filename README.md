@@ -104,6 +104,11 @@
   + 通过一个**可微池化操作模块**去分层的聚合图节点
 
 
+#### 结构优化
+
++ DROPEDGE: TOWARDS DEEP GRAPH CONVOLU-TIONAL NETWORKS ON NODE CLASSIFICATION  [论文下载](https://openreview.net/forum?id=Hkx1qkrKPr) [代码](https://github.com/DropEdge/DropEdge)
+本文解决的是图神经网络无法加深的问题，提出DropEdge机制加深GNN，用于节点分类任务。
+
 ### 应用
 
 > 图神经网络广泛用于计算机视觉、推荐系统、交通拥堵情况、生物化学结构、社交网络信息等
