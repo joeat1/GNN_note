@@ -193,6 +193,10 @@
 + 唐杰-图神经网络及认知推理-图神经网络学习班  https://www.bilibili.com/video/av77934956
 + 图神经网络在线研讨会2020  https://www.bilibili.com/video/BV1zp4y117bB
 
+- **图分析分析工具** Graphchi，SNAP，Pajek，Echarts
+- **可视化工具** Gephi，Graphviz
+- **图数据库** Neo4j
+- **数据挖掘工具** WEKA（无需编程），AlphaMiner
 
 
 # 说明
